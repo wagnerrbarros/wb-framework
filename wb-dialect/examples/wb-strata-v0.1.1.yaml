@@ -1,0 +1,67 @@
+meta:
+  formato: "wb_dialect"
+  subformato: "wb_strata"
+  versao: "0.1.1"
+  autor: "Wagner Barros"
+  descricao: "Strata framework specified in WB-Dialect"
+
+CONSTANTES:
+  LASTRO_DIMENSIONS: 4
+  MAX_LAYERS: 4
+  STRATA_VERSION: "0.1.1"
+
+definicoes:
+  strata: "Integrated existentialist and game-theoretic framework for autonomous decision-making under constraint"
+  lastro: "Multidimensional capacity to sustain refusals without collapse"
+  lastro_financeiro: "Resources to survive without accepting unfavorable conditions"
+  lastro_temporal: "Time horizon allowing strategic patience"
+  lastro_reputacional: "Social capital that opens alternatives"
+  lastro_cognitivo: "Mental capacity to evaluate and decide clearly"
+  bad_faith: "Sartrean concept of denying one's own freedom through inaction"
+  jouissance: "Lacanian concept of paradoxical pleasure from the 'almost' position"
+
+strata:
+  layers:
+    C3:
+      nome: "Identity Construction"
+      objetivo: "Consolidate self through repeated choices"
+      criterio_sucesso: "Consistent decision-making aligned with values"
+      riscos: ["Identity fragmentation", "External validation dependency"]
+    C2:
+      nome: "Strategic Decision"
+      objetivo: "Choose with expanded time horizon"
+      criterio_sucesso: "Decisions consider long-term consequences"
+      riscos: ["Analysis paralysis", "Short-term temptation"]
+    C1:
+      nome: "Game Mapping"
+      objetivo: "Identify active games, rules, payoffs"
+      criterio_sucesso: "Clear map of all active games"
+      riscos: ["Incomplete mapping", "Misreading payoffs"]
+    C0:
+      nome: "Lastro"
+      objetivo: "Eliminate immediate coercion"
+      criterio_sucesso: "Ability to say no without collapse"
+      riscos: ["Overestimation of lastro", "Complacency"]
+  operational_rules:
+    R001: "Never play the purpose game without winning the ballast game"
+    R002: "If you cannot say no, there was no choice"
+    R003: "Every relevant choice alters the future space of possible games"
+    R004: "Money is not an end — it is a structural variable"
+
+exemplos:
+  - id: "STRATA-001"
+    nome: "Lastro evaluation before job decision"
+    entrada:
+      context: "Job offer with below-market salary"
+      lastro_level:
+        financeiro: 6
+        temporal: 4
+        reputacional: 5
+        cognitivo: 7
+    processamento:
+      - "Evaluate financial lastro: 6/10 — can wait 3 months"
+      - "Evaluate temporal lastro: 4/10 — moderate urgency"
+      - "Check for coercion signs"
+      - "Apply R002: can say no without collapse"
+    saida:
+      decision: "REJECT — insufficient financial lastro to negotiate from strength"

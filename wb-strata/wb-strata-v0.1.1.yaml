@@ -1,0 +1,66 @@
+meta:
+  formato: "wb_dialect"
+  subformato: "wb_strata"
+  versao: "0.1.1"
+  autor: "Wagner Barros"
+  descricao: "Strata — philosophical framework for autonomous decision-making"
+
+CONSTANTES:
+  LASTRO_DIMENSIONS: 4
+  STRATA_VERSION: "0.1.1"
+
+definicoes:
+  strata: "Integrated existentialist and game-theoretic framework"
+  lastro: "Multidimensional capacity to sustain refusals"
+  jogo: "Structured interaction with rules, players, and payoffs"
+  autonomia: "Capacity to act according to self-defined values under constraint"
+
+strata:
+  theoretical_foundations:
+    - field: "Existentialism"
+      concept: "Bad faith (mauvaise foi)"
+      reference: "Sartre (1943)"
+    - field: "Psychoanalysis"
+      concept: "Jouissance"
+      reference: "Lacan (1966)"
+    - field: "Game Theory"
+      concept: "Nash Equilibrium, bargaining"
+      reference: "Von Neumann & Morgenstern (1944), Rubinstein (1982)"
+    - field: "Motivation Theory"
+      concept: "Hierarchy of needs"
+      reference: "Maslow (1943)"
+    - field: "Behavioral Economics"
+      concept: "Prospect theory"
+      reference: "Kahneman & Tversky (1979)"
+  decision_process:
+    input: "context + lastro level + available games"
+    steps:
+      - "Identify coercion"
+      - "Classify time horizon"
+      - "Evaluate impact on lastro"
+      - "Simulate irreversibility"
+      - "Check for jouissance or bad faith"
+    output: "decision + cost assumed + expected gain + lastro impact"
+
+exemplos:
+  - id: "STRATA-001"
+    nome: "Strategic career decision"
+    entrada:
+      context: "Proposal to start independent consulting"
+      lastro:
+        financeiro: 5
+        temporal: 6
+        reputacional: 4
+        cognitivo: 7
+      available_games: ["employment", "consulting", "partnership"]
+    processamento:
+      - "Identify coercion: none detected"
+      - "Classify time horizon: long-term (6+ months)"
+      - "Evaluate lastro impact: positive in reputational dimension"
+      - "Simulate irreversibility: low — can return to employment"
+      - "Check for bad faith: no evidence of avoidance"
+    saida:
+      decision: "PURSUE consulting"
+      cost_assumed: "Short-term income instability"
+      expected_gain: "Long-term autonomy + reputational growth"
+      lastro_impact: "Positive +2 reputational"

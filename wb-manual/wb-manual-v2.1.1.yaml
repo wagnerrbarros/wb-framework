@@ -1,0 +1,103 @@
+meta:
+  formato: "wb_dialect"
+  subformato: "wb_manual"
+  versao: "2.1.1"
+  autor: "Wagner Barros"
+  descricao: "The Manual — cognitive operating system for neurodivergent self-management"
+
+CONSTANTES:
+  DECISION_RULES: 5
+  EXECUTION_PHASES: 4
+  MANUAL_VERSION: "2.1.1"
+
+definicoes:
+  manual: "Cognitive operating system derived from ASD Level 1 neuropsychological assessment"
+  hyperfocus: "State of intense concentration on a single task characteristic of ASD Level 1"
+  verbal_conceptual_modeling: "Primary cognitive asset — capacity to model problems verbally"
+  goce: "Jouissance — paradoxical pleasure from the 'almost' position"
+  alibi: "Internal narrative justifying inaction; equivalent to Sartrean bad faith"
+  ato_analitico: "Acting despite jouissance without precondition of resolved resistance"
+  ato_neurotico: "Postponing action indefinitely until resistance is overcome"
+
+manual:
+  core_architecture:
+    operating_mode: "deep hyperfocus"
+    primary_asset: "verbal-conceptual modeling"
+    constraint: "monotasking only — no context switching"
+  theoretical_streams:
+    neuropsychology:
+      concept: "ASD Level 1"
+      operational_use: "Deep focus as asset; social improvisation as cost center"
+    psychoanalysis:
+      concept: "Jouissance (Lacan)"
+      operational_use: "Naming the 'almost' pattern to break the loop"
+    existentialism:
+      concept: "Bad faith (Sartre)"
+      operational_use: "Recognizing inaction as choice, not condition"
+    systems_theory:
+      concept: "State machines, fallback protocols"
+      operational_use: "Degraded modes, failure recovery"
+  decision_engine:
+    rules:
+      DEC-001:
+        nome: "Primary Asset Filter"
+        logic: "If activity does not use verbal-conceptual modeling → REJECT"
+      DEC-002:
+        nome: "Cost-Return Ratio"
+        logic: "If cognitive cost > expected return → REJECT"
+      DEC-003:
+        nome: "Minimum Clarity"
+        logic: "If problem is unstructured → STRUCTURE before acting"
+      DEC-004:
+        nome: "Leverage"
+        logic: "Prioritize activities with multiplicative effect"
+      DEC-005:
+        nome: "Money Required"
+        logic: "If no clear monetization path → LOW PRIORITY"
+  execution_engine:
+    phases:
+      - nome: "Diagnosis"
+        descricao: "Assess current state and problem structure"
+      - nome: "Modeling"
+        descricao: "Build conceptual model of the problem"
+      - nome: "Implementation"
+        descricao: "Execute the solution"
+      - nome: "Finalization"
+        descricao: "Complete and document outcomes"
+  degraded_modes:
+    cognitive_overload:
+      trigger: "Excessive information or decisions"
+      action: "Organize information (CRM, spreadsheet)"
+    low_energy:
+      trigger: "Physical or mental exhaustion"
+      action: "Register ideas (no sales commitment)"
+    chaotic_environment:
+      trigger: "Unpredictable external conditions"
+      action: "Execute mechanical tasks; post ready-made offers"
+
+exemplos:
+  - id: "MANUAL-001"
+    nome: "Daily decision evaluation"
+    entrada:
+      tasks:
+        - name: "Write client proposal"
+          uses_verbal_conceptual_modeling: true
+          cognitive_cost: 7
+          expected_return: 8
+          clarity: "structured"
+          leverage: "high"
+          monetization: "direct"
+        - name: "Organize inbox"
+          uses_verbal_conceptual_modeling: false
+          cognitive_cost: 2
+          expected_return: 1
+          clarity: "structured"
+          leverage: "low"
+          monetization: "none"
+    processamento:
+      - "Task 1: DEC-001 pass, DEC-002 pass (7 ≤ 8), DEC-003 pass, DEC-004 pass, DEC-005 pass → EXECUTE"
+      - "Task 2: DEC-001 fail (not verbal-conceptual) → REJECT"
+    saida:
+      selection: "Write client proposal"
+      rejected: "Organize inbox"
+      energy_allocation: "80% to proposal, 20% to structured breaks"

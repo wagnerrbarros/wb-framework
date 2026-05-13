@@ -1,0 +1,69 @@
+meta:
+  formato: "wb_dialect"
+  subformato: "wb_manual"
+  versao: "2.1.1"
+  autor: "Wagner Barros"
+  descricao: "The Manual — cognitive operating system specified in WB-Dialect"
+
+CONSTANTES:
+  DECISION_RULES: 5
+  EXECUTION_PHASES: 4
+  MANUAL_VERSION: "2.1.1"
+
+definicoes:
+  manual: "Cognitive operating system for neurodivergent self-management"
+  goce: "Paradoxical pleasure from the 'almost' position — almost sold, almost recognized"
+  alibi: "Internal narrative that justifies inaction and substitutes real identity"
+  ato_analitico: "Acting despite jouissance, without using resistance as a precondition"
+  ato_neurotico: "Postponing action until resistance is 'overcome' — which never happens"
+
+manual:
+  core_architecture:
+    operating_mode: "deep hyperfocus"
+    primary_asset: "verbal-conceptual modeling"
+  decision_engine:
+    DEC-001:
+      nome: "Primary Asset Filter"
+      logic: "If activity does not use verbal-conceptual modeling → REJECT"
+    DEC-002:
+      nome: "Cost-Return Ratio"
+      logic: "If cognitive cost > expected return → REJECT"
+    DEC-003:
+      nome: "Minimum Clarity"
+      logic: "If problem is unstructured → STRUCTURE before acting"
+    DEC-004:
+      nome: "Leverage"
+      logic: "Prioritize activities with multiplicative effect"
+    DEC-005:
+      nome: "Money Required"
+      logic: "If no clear monetization path → LOW PRIORITY"
+  execution_engine:
+    phases:
+      - "Diagnosis"
+      - "Modeling"
+      - "Implementation"
+      - "Finalization"
+  degraded_mode:
+    triggers:
+      cognitive_overload: "Organize information (CRM, spreadsheet)"
+      low_energy: "Register ideas (no sales commitment)"
+      chaotic_environment: "Execute mechanical tasks or post ready-made offers"
+
+exemplos:
+  - id: "MANUAL-001"
+    nome: "Decision engine evaluation"
+    entrada:
+      activity: "Update CRM with call notes"
+      assessment:
+        uses_verbal_conceptual_modeling: true
+        cognitive_cost: 2
+        expected_return: 5
+        clarity: "structured"
+    processamento:
+      - "Apply DEC-001: passes — uses verbal-conceptual modeling"
+      - "Apply DEC-002: passes — cognitive cost (2) < expected return (5)"
+      - "Apply DEC-003: passes — problem is structured"
+      - "Apply DEC-004: medium leverage"
+      - "Apply DEC-005: indirect monetization path"
+    saida:
+      decision: "EXECUTE — low-cost high-return activity"

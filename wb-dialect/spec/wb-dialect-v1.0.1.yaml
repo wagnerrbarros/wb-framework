@@ -1,0 +1,68 @@
+meta:
+  formato: "wb_dialect"
+  subformato: "wb_dialect_spec"
+  versao: "1.0.1"
+  autor: "Wagner Barros"
+  descricao: "Specification of the WB-Dialect language itself"
+
+CONSTANTES:
+  DIALECT_VERSION: "1.0.1"
+  MAX_CONTEXT_SWITCH: 3
+  MIN_EXAMPLES_PER_FILE: 1
+
+definicoes:
+  wb_dialect: "YAML-based specification language for human-AI cognitive collaboration"
+  dialeto: "A structured format with mandatory sections (meta, definicoes, module, exemplos, templates)"
+  lastro: "Capacity to sustain refusals without collapse"
+
+wb_dialect_spec:
+  estrutura_arquivo:
+    sections:
+      - meta: "Metadata about the file (format, version, author)"
+      - CONSTANTES: "Global constants in SCREAMING_SNAKE_CASE"
+      - definicoes: "Formal concept definitions"
+      - module: "Primary module content (named after the module)"
+      - exemplos: "Concrete examples with fixed schema"
+      - templates: "Reusable templates"
+  naming_conventions:
+    constants: "SCREAMING_SNAKE_CASE"
+    variables: "snake_case"
+    rule_ids: "PREFIX-NNN"
+    indentation: "2 spaces"
+    versioning: "Semantic Versioning MAJOR.MINOR.PATCH"
+  validation_rules:
+    - "Every file must contain exactly one meta section"
+    - "Every file must contain at least one exemplo"
+    - "Rule IDs must follow format PREFIX-NNN"
+    - "Indentation must be exactly 2 spaces"
+
+exemplos:
+  - id: "DIALECT-001"
+    nome: "Minimal valid file"
+    entrada:
+      content: |
+        meta:
+          formato: "wb_dialect"
+          subformato: "wb_test"
+          versao: "1.0.0"
+          autor: "Author"
+          descricao: "Test"
+        definicoes: {}
+        test: {}
+        exemplos: []
+    processamento:
+      - "Validate meta section exists"
+      - "Validate all required fields present"
+    saida: "Valid"
+
+templates:
+  default_file:
+    meta:
+      formato: "wb_dialect"
+      subformato: "wb_[module]"
+      versao: "MAJOR.MINOR.PATCH"
+      autor: "Author Name"
+      descricao: "Description"
+    CONSTANTES: {}
+    definicoes: {}
+    exemplos: []

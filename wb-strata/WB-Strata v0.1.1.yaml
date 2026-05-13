@@ -1,0 +1,294 @@
+# ============================================================
+# WB-Strata v0.1.1
+# Integrated Existentialist and Game-Theoretic Framework
+# for Autonomous Decision-Making Under Constraint
+# ============================================================
+# Author:  Wagner Barros
+# Created: 2024-02-10
+# Updated: 2026-05-01
+# License: CC BY-SA 4.0
+# Status:  Experimental
+# ============================================================
+
+meta:
+  formato: "wb_dialect"
+  subformato: "wb_strata"
+  versao: "0.1.1"
+  autor: "Wagner Barros"
+  status: "experimental"
+  descricao: >
+    Sistema operacional existencial para tomada de decisões
+    reais, baseado em teoria dos jogos, existencialismo e
+    lastro como condição de autonomia.
+  idioma: "pt-BR"
+  license: "CC BY-SA 4.0"
+
+# ============================================================
+# ESCOPO
+# ============================================================
+escopo:
+  objetivo_primario: "Permitir decisões livres sob restrições reais"
+  objetivo_secundario: "Aumento progressivo de autonomia"
+  nao_cobre:
+    - "Produção de sentido abstrato"
+    - "Promessas emocionais"
+    - "Substituição de responsabilidade individual"
+    - "Terapia ou tratamento clínico"
+
+# ============================================================
+# CONSTANTES
+# ============================================================
+CONSTANTES:
+  METRICA_DE_VITORIA: "AUTONOMIA"
+  RECURSO_CRITICO: "LASTRO"
+  CONDICAO_MINIMA_DE_LIBERDADE: "CAPACIDADE_DE_DIZER_NAO"
+
+# ============================================================
+# DEFINIÇÕES CONCEITUAIS
+# ============================================================
+definicoes:
+  jogo:
+    descricao: "Sistema de escolhas com regras, payoff e coerção"
+    propriedades:
+      - "Horizonte temporal"
+      - "Irreversibilidade"
+      - "Custo de saída"
+
+  lastro:
+    descricao: >
+      Capacidade de sustentar recusas sem colapso.
+      Diferente de BATNA (Fisher & Ury, 1981) e de outside
+      options (Rubinstein, 1982), lastro é multidimensional.
+    tipos:
+      - tipo: "financeiro"
+        descricao: "Recursos para sobreviver sem aceitar condições desfavoráveis"
+      - tipo: "temporal"
+        descricao: "Horizonte que permite paciência estratégica"
+      - tipo: "reputacional"
+        descricao: "Capital social que abre alternativas"
+      - tipo: "cognitivo"
+        descricao: "Capacidade mental de avaliar e decidir com clareza"
+
+  escolha:
+    descricao: "Ato que reduz o espaço futuro de possibilidades"
+    observacao: "Não escolher também é uma escolha (Sartre, 1943)"
+
+  coercao:
+    descricao: "Ausência de escolhas viáveis por falta de lastro"
+
+  identidade:
+    descricao: "Resultado acumulado de escolhas repetidas ao longo do tempo"
+
+  goce:
+    descricao: >
+      Conceito lacaniano (jouissance). Prazer paradoxal extraído
+      da posição de 'quase' — quase vendeu, quase foi reconhecido.
+      Mantém o sujeito preso em loops de inação sem consciência
+      de que a inação é uma escolha gozada.
+    referencia: "Lacan, J. (1966). Écrits."
+
+  ma_fe:
+    descricao: >
+      Conceito sartriano (mauvaise foi). Recusa de reconhecer
+      a própria liberdade de escolha. O sujeito age como se
+      não pudesse escolher, quando na verdade escolhe não escolher.
+    referencia: "Sartre, J.-P. (1943). L'Être et le Néant."
+
+# ============================================================
+# CAMADAS
+# ============================================================
+camadas:
+  - id: "C0"
+    nome: "Lastro"
+    objetivo: "Eliminar coerção imediata"
+    criterio_de_sucesso: "Sobrevivência sem submissão"
+    riscos:
+      - "Aceitar jogos ruins por urgência"
+      - "Confundir necessidade com vocação"
+
+  - id: "C1"
+    nome: "Mapeamento de Jogos"
+    objetivo: "Identificar jogos ativos e suas estruturas"
+    perguntas_chave:
+      - "Quais são as regras?"
+      - "Qual o payoff real (não o declarado)?"
+      - "Qual o custo de saída?"
+      - "Estou jogando por inercia ou por escolha?"
+    riscos:
+      - "Jogar jogos alheios por inércia"
+      - "Não enxergar jogos ocultos"
+
+  - id: "C2"
+    nome: "Decisão Estratégica"
+    objetivo: "Escolher com horizonte temporal ampliado"
+    criterios:
+      - "Aumenta lastro?"
+      - "Preserva integridade?"
+      - "Amplia capacidade futura de dizer não?"
+    riscos:
+      - "Decisão reativa sob emoção"
+      - "Miopia temporal (priorizar ganho imediato)"
+
+  - id: "C3"
+    nome: "Construção Identitária"
+    objetivo: "Consolidar identidade ao longo do tempo"
+    alerta: >
+      Identidade não guia escolhas sob coerção.
+      Em situação de lastro baixo, a identidade cede
+      à necessidade. Isso não é falha de caráter —
+      é estrutura do jogo.
+    riscos:
+      - "Narrativas autoindulgentes"
+      - "Confundir identidade desejada com identidade operacional"
+
+# ============================================================
+# REGRAS OPERACIONAIS
+# ============================================================
+regras:
+  - id: "R001"
+    enunciado: >
+      Nunca jogar o jogo do propósito sem vencer o jogo do lastro.
+    justificativa: >
+      Reformulação operacional da hierarquia de necessidades
+      (Maslow, 1943): construa a base antes de buscar
+      autorrealização. A diferença é que Strata define como
+      medir e como operar.
+
+  - id: "R002"
+    enunciado: >
+      Se não é possível dizer não, não houve escolha.
+    justificativa: >
+      A liberdade sartriana é sempre presente, mas só é
+      operacional quando sustentada por lastro. Sem lastro,
+      a "escolha" é coerção.
+
+  - id: "R003"
+    enunciado: >
+      Toda escolha relevante altera o espaço futuro de jogos.
+    justificativa: >
+      Jogos não são estáticos. Cada decisão reconfigura
+      o campo de possibilidades (efeito path dependence).
+
+  - id: "R004"
+    enunciado: >
+      Dinheiro não é fim — é variável estrutural.
+    justificativa: >
+      Lastro financeiro é condição para autonomia em
+      contextos capitalistas. Negar isso é má-fé.
+
+# ============================================================
+# PROCESSO DECISÓRIO PADRÃO
+# ============================================================
+processo_decisorio:
+  entrada:
+    - "contexto"
+    - "nivel_de_lastro"
+    - "jogos_disponiveis"
+  processamento:
+    - "Identificar coerção"
+    - "Classificar horizonte temporal"
+    - "Avaliar impacto no lastro"
+    - "Simular irreversibilidade"
+    - "Verificar presença de goce ou má-fé"
+  saida:
+    - "decisao"
+    - "custo_assumido"
+    - "ganho_esperado"
+    - "impacto_no_lastro"
+
+# ============================================================
+# EXEMPLOS
+# ============================================================
+exemplos:
+  - id: "STRATA-EX-001"
+    nome: "Aceitação estratégica por falta de lastro"
+    entrada:
+      contexto: "Oferta de trabalho desalinhada com valores"
+      nivel_de_lastro: "baixo"
+      jogos_disponiveis: ["aceitar", "recusar e buscar outro", "empreender"]
+    processamento:
+      - "Coerção identificada: sem lastro para recusar"
+      - "Jogo classificado como temporário"
+      - "Horizonte de saída definido: 6 meses"
+      - "Verificação de má-fé: não é que 'não pode' recusar; é que o custo é alto demais agora"
+    saida:
+      decisao: "Aceitar com prazo definido"
+      custo_assumido: "6 meses de alinhamento parcial"
+      ganho_esperado: "Lastro financeiro para recusa futura"
+      impacto_no_lastro: "Positivo (financeiro), Neutro (identitário)"
+
+  - id: "STRATA-EX-002"
+    nome: "Recusa consciente com lastro"
+    entrada:
+      contexto: "Projeto financeiramente atrativo, eticamente ruim"
+      nivel_de_lastro: "alto"
+      jogos_disponiveis: ["aceitar", "recusar", "negociar condições"]
+    processamento:
+      - "Ausência de coerção: lastro permite recusa"
+      - "Avaliação de impacto identitário: aceitar compromete integridade"
+      - "Verificação de goce: o atrativo financeiro pode ser goce do 'quase recusei'"
+    saida:
+      decisao: "Recusar"
+      custo_assumido: "Perda financeira imediata"
+      ganho_esperado: "Preservação de autonomia e integridade"
+      impacto_no_lastro: "Negativo (financeiro), Positivo (identitário)"
+
+  - id: "STRATA-EX-003"
+    nome: "Detecção de goce na inação"
+    entrada:
+      contexto: "Pessoa adia envio de proposta comercial há 3 semanas"
+      nivel_de_lastro: "médio"
+      hipotese: "Goce da posição de 'quase'"
+    processamento:
+      - "Identificar: a inação não é incapacidade, é escolha gozada"
+      - "Verificar: existe medo real ou goce disfarçado de medo?"
+      - "Ação mínima: enviar proposta para 1 pessoa em 24h"
+    saida:
+      decisao: "Executar ação mínima"
+      justificativa: >
+        O goce perde força quando o sujeito age. A ação
+        imperfeita é superior à modelagem perfeita que não
+        se concretiza.
+
+# ============================================================
+# LIMITES
+# ============================================================
+limites:
+  nao_resolve:
+    - "Eventos fora de controle (tragedias inevitáveis)"
+    - "Garantias de sucesso"
+    - "Substituir terapia clínica quando necessário"
+  pressupostos:
+    - "Adulto funcional com capacidade de reflexão"
+    - "Aceitação de responsabilidade pelas próprias escolhas"
+    - "Disposição para experimentar e perder"
+  dependencias:
+    - "O framework assume que o sujeito pode acessar autoconhecimento"
+    - "Em contextos de crise aguda, a aplicação pode ser prejudicial"
+
+# ============================================================
+# REFERÊNCIAS
+# ============================================================
+referencias:
+  - "Fisher, R. & Ury, W. (1981). Getting to Yes."
+  - "Kahneman, D. & Tversky, A. (1979). Prospect Theory. Econometrica, 47(2)."
+  - "Lacan, J. (1966). Écrits. Seuil."
+  - "Maslow, A. (1943). A Theory of Human Motivation. Psychological Review, 50(4)."
+  - "Rubinstein, A. (1982). Perfect Equilibrium in a Bargaining Model. Econometrica, 50(1)."
+  - "Sartre, J.-P. (1943). L'Être et le Néant. Gallimard."
+  - "Von Neumann, J. & Morgenstern, O. (1944). Theory of Games and Economic Behavior."
+
+# ============================================================
+# ESTADO E EVOLUÇÃO
+# ============================================================
+estado:
+  maturidade: "experimental"
+  criterio_de_evolucao: "Funcionar sob pressão em decisões reais"
+  proximo_passo: "Aplicação sistemática com registro de resultados"
+
+# ============================================================
+# LICENÇA
+# ============================================================
+licenca: >
+  Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+  Copyright (c) 2024-2026 Wagner Barros.

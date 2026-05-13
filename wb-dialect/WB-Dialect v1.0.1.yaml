@@ -1,0 +1,231 @@
+# ============================================================
+# WB-Dialect v1.0.1
+# Formal Specification Language for Human-AI Cognitive Interface
+# ============================================================
+# Author:  Wagner Barros
+# Created: 2024-01-01
+# Updated: 2026-05-01
+# License: CC BY-SA 4.0
+# Status:  Stable
+# ============================================================
+
+meta:
+  formato: "wb_dialect"
+  subformato: "wb_specification"
+  versao: "1.0.1"
+  autor: "Wagner Barros"
+  descricao: >
+    Linguagem de especificação formal para representação de
+    modelos cognitivos humanos em formato legível por humanos
+    e processável por sistemas de inteligência artificial.
+  idioma: "pt-BR"
+  license: "CC BY-SA 4.0"
+
+# ============================================================
+# ESCOPO
+# ============================================================
+escopo:
+  objetivo: >
+    Fornecer uma linguagem de especificação que permita a
+    humanos estruturar conhecimento cognitivo complexo
+    (filosófico, clínico, estratégico) em formato que sistemas
+    de IA possam interpretar, analisar e raciocinar com fidelidade.
+
+  publico_alvo:
+    - "Pesquisadores que precisam formalizar frameworks cognitivos"
+    - "Profissionais neurodivergentes que constroem sistemas pessoais"
+    - "Desenvolvedores de IA que precisam de input estruturado"
+    - "Acadêmicos em ciência da informação e HCI"
+
+  nao_cobre:
+    - "Substituição de linguagens de ontologia formais (OWL, RDF)"
+    - "Geração automática de conhecimento (o conteúdo é humano)"
+    - "Validação formal matemática (validação é por exemplos)"
+    - "Interface gráfica ou visualização"
+
+# ============================================================
+# PRINCÍPIOS DE DESIGN
+# ============================================================
+design_principles:
+  - id: "DP-01"
+    nome: "Híbrido Humano-Máquina"
+    descricao: >
+      Todo arquivo WB-Dialect deve ser simultaneamente legível
+      por um humano sem treinamento técnico e processável por
+      um sistema de IA sem contexto prévio.
+    justificativa: >
+      Elimina o gap entre prompt engineering (informal, não
+      reutilizável) e linguagens de ontologia formais
+      (legíveis apenas por máquinas ou especialistas).
+
+  - id: "DP-02"
+    nome: "Separação de Preocupações"
+    descricao: >
+      Cada arquivo WB-Dialect aborda um único domínio ou módulo.
+      Conhecimento complexo é decomposto em arquivos especializados
+      que podem ser vinculados mas permanecem independentemente
+      interpretáveis.
+    justificativa: >
+      Permite que sistemas de IA processem módulos individuais
+      sem carregar o conhecimento completo.
+
+  - id: "DP-03"
+    nome: "Hierarquia de Abstração"
+    descricao: >
+      O conteúdo é organizado em três níveis:
+      Conceitual (definições, princípios) →
+      Estrutural (regras, motores) →
+      Concreto (exemplos, templates).
+    justificativa: >
+      Espelha como especialistas humanos organizam conhecimento
+      e permite que sistemas de IA processem no nível de
+      detalhe apropriado.
+
+  - id: "DP-04"
+    nome: "Exemplos como Testes"
+    descricao: >
+      Todo arquivo WB-Dialect deve incluir exemplos concretos
+      que demonstrem a aplicação de suas regras e definições.
+      Os exemplos servem dupla função: documentação para leitores
+      humanos e calibração para interpretação por IA.
+    justificativa: >
+      Análogo a test-driven development em engenharia de software
+      (Beck, 2003), aplicado à representação do conhecimento.
+      Se a IA não consegue reproduzir o output esperado a partir
+      do input e processamento fornecidos, a especificação é
+      ambígua e precisa de revisão.
+
+# ============================================================
+# ESTRUTURA OBRIGATÓRIA DE ARQUIVO
+# ============================================================
+estrutura_arquivo:
+  obrigatoria:
+    - secao: "meta"
+      descricao: "Metadados do arquivo (formato, versão, autor, descrição)"
+      funcao: "Identificação e versionamento"
+
+    - secao: "CONSTANTES"
+      descricao: "Valores fixos em SCREAMING_SNAKE_CASE"
+      funcao: "Parâmetros imutáveis do módulo"
+
+    - secao: "definicoes"
+      descricao: "Conceitos-chave com definições formais"
+      funcao: "Vocabulário conceitual do módulo"
+
+  opcional:
+    - secao: "[modulo_principal]"
+      descricao: "Conteúdo principal (regras, motores, protocolos)"
+      funcao: "Conhecimento operacional"
+
+    - secao: "exemplos"
+      descricao: "Casos concretos com id, entrada, processamento, saída"
+      funcao: "Validação e documentação"
+
+    - secao: "templates"
+      descricao: "Estruturas de texto reutilizáveis"
+      funcao: "Padronização de output"
+
+# ============================================================
+# CONVENÇÕES
+# ============================================================
+convencoes:
+  naming:
+    constantes: "SCREAMING_SNAKE_CASE"
+    variaveis: "snake_case"
+    regras_ids: "PREFIXO-NNN (ex: DEC-001, R001, EX001)"
+    secoes_principais: "snake_case"
+
+  estrutura:
+    formato_base: "YAML"
+    indentacao: "2 espaços"
+    comentarios: "Idioma do autor"
+    ids_unicos: true
+
+  versionamento:
+    esquema: "Semantic Versioning (MAJOR.MINOR.PATCH)"
+    independencia: "Versões independentes por módulo"
+    compatibilidade: "Backward compatibility dentro da mesma MAJOR"
+
+# ============================================================
+# FORMATO DE EXEMPLO (padrão)
+# ============================================================
+formato_exemplo:
+  descricao: >
+    Todo exemplo segue a estrutura: id único, nome descritivo,
+    dados de entrada, passos de processamento e saída esperada.
+  schema:
+    id: "PREFIXO-NNN"
+    nome: "Descrição curta do caso"
+    entrada: "Dados de contexto (dict ou lista)"
+    processamento: "Passos lógicos aplicados (lista)"
+    saida: "Resultado esperado (string, dict ou ação)"
+
+# ============================================================
+# IMPLEMENTAÇÕES CONHECIDAS
+# ============================================================
+implementacoes:
+  - nome: "WB-Strata"
+    versao: "0.1"
+    descricao: >
+      Framework filosófico que integra existencialismo e teoria
+      dos jogos para decisão autônoma sob restrição.
+    repositorio: "https://github.com/wb-framework/wb-strata"
+
+  - nome: "WB-Manual"
+    versao: "2.1"
+    descricao: >
+      Sistema operacional cognitivo para autogestão neurodivergente,
+      derivado de avaliação neuropsicológica (TEA Nível 1).
+    repositorio: "https://github.com/wb-framework/wb-manual"
+
+# ============================================================
+# EXEMPLO DE USO COMPLETO
+# ============================================================
+exemplo_uso:
+  descricao: >
+    Exemplo mínimo de um módulo WB-Dialect demonstrando
+    todas as seções obrigatórias e opcionais.
+
+  codigo: |
+    meta:
+      formato: "wb_dialect"
+      subformato: "wb_exemplo"
+      versao: "0.1"
+      autor: "Autor"
+      descricao: "Descrição do módulo"
+
+    CONSTANTES:
+      PARAMETRO_FIXO: "valor"
+
+    definicoes:
+      conceito: "Definição formal do conceito"
+
+    modulo:
+      regra:
+        descricao: "O que a regra faz"
+
+    exemplos:
+      - id: "EX001"
+        nome: "Caso mínimo"
+        entrada: { contexto: "dado" }
+        processamento: ["Passo 1", "Passo 2"]
+        saida: "Resultado"
+
+    templates:
+      modelo: "Estrutura reutilizável: [variável]"
+
+# ============================================================
+# REFERÊNCIAS
+# ============================================================
+referencias:
+  - "Beck, K. (2003). Test Driven Development: By Example."
+  - "McGuinness & Van Harmelen (2004). OWL Web Ontology Language."
+  - "Lassila & Swick (1999). RDF Model and Syntax Specification."
+  - "Preston-Werner (2013). Semantic Versioning 2.0.0."
+
+# ============================================================
+# LICENÇA
+# ============================================================
+licenca: >
+  Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+  Copyright (c) 2024-2026 Wagner Barros.

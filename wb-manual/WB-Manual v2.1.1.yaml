@@ -1,0 +1,391 @@
+# ============================================================
+# WB-Manual v2.1.1
+# Cognitive Operating System for Neurodivergent Self-Management
+# ============================================================
+# Author:  Wagner Barros
+# Created: 2024-03-15
+# Updated: 2026-05-01
+# License: CC BY-SA 4.0
+# Status:  Stable
+# Source:  Neuropsychological Assessment — ASD Level 1
+# ============================================================
+
+meta:
+  formato: "wb_dialect"
+  subformato: "wb_manual"
+  versao: "2.1.1"
+  autor: "Wagner Barros"
+  source: "Laudo Neuropsicológico — TEA Nível 1 + diálogo de autodiagnóstico"
+  purpose: >
+    Sistema operacional do agente cognitivo WB.
+    Define arquitetura, regras de decisão, execução,
+    monetização, prospecção e protocolos de confronto
+    psicológico com padrões inconscientes de inação.
+  idioma: "pt-BR"
+  license: "CC BY-SA 4.0"
+  last_update: "2026-05-01"
+
+# ============================================================
+# ESCOPO
+# ============================================================
+escopo:
+  objetivo: >
+    Traduzir um perfil neuropsicológico (TEA Nível 1) em
+    arquitetura cognitiva executável, com regras formais
+    de decisão, protocolos de execução e mecanismos de
+    recuperação de falha.
+
+  publico_alvo_inicial:
+    - "O próprio autor (autogerenciamento cognitivo)"
+    - "Profissionais neurodivergentes em busca de estrutura operacional"
+    - "Clínicos que trabalham com TEA e buscam ferramentas estruturadas"
+
+  nao_cobre:
+    - "Substituição de acompanhamento clínico ou terapêutico"
+    - "Generalização para outros perfis neuropsicológicos sem adaptação"
+    - "Garantia de resultados comerciais"
+
+# ============================================================
+# CONSTANTES
+# ============================================================
+CONSTANTES:
+  PRIMARY_ASSET_REQUIRED: true
+  MAX_CONTEXT_SWITCH: 1
+  MIN_ENERGY_OPERATION_MODE: "degraded"
+  VALUE_CAPTURE_REQUIRED: true
+  GOZER_RECONHECIMENTO_COMO_ALVO: false
+  MIN_ENERGY_FOR_DIRECT_SALE: 70
+
+# ============================================================
+# DEFINIÇÕES
+# ============================================================
+definicoes:
+  sistema: "Conjunto integrado de capacidades cognitivas, regras e execução"
+  runtime: "Operação em ambiente real com variáveis imperfeitas"
+  decisao: "Função que prioriza, aceita ou rejeita ações"
+  monetizacao: "Conversão de valor gerado em valor capturado"
+  modo_degradado: "Estado operacional com energia/capacidade reduzida"
+  goce: >
+    Prazer paradoxal extraído da posição de 'quase' — quase
+    vendeu, quase reconhecido. É o que mantém o loop sem saída.
+    Conceito lacaniano (jouissance) aplicado operacionalmente.
+  alibi: >
+    Narrativa interna que justifica a inação e substitui a
+    identidade real. Ex: 'não sei vender', 'preciso entender mais'.
+    Equivalente operacional da má-fé sartriana.
+  arquitetura_de_oportunidade: >
+    Mapeamento de problemas existentes + sinalização de
+    clareza + posicionamento sem improviso.
+  ato_analitico: "Agir apesar do goce, sem usar a resistência como condição."
+  ato_neurotico: >
+    Adiar a ação até que a resistência seja 'superada' —
+    o que nunca acontece.
+
+# ============================================================
+# ARQUITETURA CENTRAL
+# ============================================================
+core_architecture:
+  system_type: "Especialista"
+  operating_mode: "Hiperfoco seletivo"
+  primary_driver: "Compreensão verbal + raciocínio abstrato"
+  runtime_requirement: >
+    Necessidade de estrutura mínima para performance máxima.
+    Em ausência de estrutura, operar via protocolos de fallback.
+
+primary_asset:
+  name: "Modelagem conceitual verbal"
+  allocation_rule: "100%"
+  constraint: "Qualquer atividade fora deste ativo é custo estrutural."
+  output_types:
+    - "Diagnóstico"
+    - "Estruturação"
+    - "Explicação"
+    - "Arquitetura de solução"
+
+secondary_strengths:
+  - "Controle inibitório elevado"
+  - "Flexibilidade cognitiva lógica"
+  - "Atenção profunda"
+  - "Memória semântica"
+  - "Estabilidade sob pressão emocional"
+
+cost_centers:
+  high:
+    - "Multitarefa"
+    - "Caos"
+    - "Ambiguidade emocional"
+    - "Improviso social"
+    - "Prospecção ativa (cold call)"
+  medium:
+    - "Pressão de tempo"
+    - "Execução rápida sem estrutura"
+  low:
+    - "Sistemas"
+    - "Lógica"
+    - "Escrita estruturada"
+    - "Diagnóstico pago"
+
+attention_model:
+  type: "Monotarefa profunda"
+  rule: "Alternância de contexto reduz performance exponencialmente."
+  constraint:
+    max_parallel_tasks: 1
+
+# ============================================================
+# FUNDAMENTAÇÕES PSICOLÓGICAS
+# ============================================================
+psychological_foundations:
+  freud:
+    conceito: "Fixação fálica"
+    descricao: "O pai define o valor do sujeito (cena de 6 anos)"
+    operacional: >
+      Venda reativa a ferida de valor — exposição ao
+      julgamento do Outro como autoridade.
+  lacan:
+    conceito: "Goce (jouissance)"
+    descricao: "Segurança da posição de 'quase' — não-exposição ao Outro"
+    operacional: >
+      Nomear o goce para não ser governado por ele.
+      O 'quase vendeu' é o gozo parcial que substitui a venda real.
+  sartre:
+    conceito: "Má-fé (mauvaise foi)"
+    descricao: "Agir como se não pudesse escolher vender, quando escolhe não vender"
+    operacional: >
+      Reconhecer que a inação é escolha, não condição.
+  neuropsicologia:
+    conceito: "TEA Nível 1"
+    descricao: "Monotarefa profunda, custo altíssimo em improviso social"
+    operacional: >
+      Estruturar ambiente para minimizar improviso.
+      Usar hiperfoco como ativo, não como patologia.
+  contribuicao_do_framework: >
+    O manual não é terapia, é sistema operacional.
+    Nomeia o goce para não ser governado por ele.
+
+# ============================================================
+# MOTOR DE DECISÃO
+# ============================================================
+decision_engine:
+  description: >
+    Sistema de priorização e corte. Define o que entra
+    e o que é eliminado.
+  rules:
+    - id: "DEC-001"
+      name: "Filtro de ativo principal"
+      logic: "Se atividade não usa modelagem conceitual verbal → REJEITAR"
+    - id: "DEC-002"
+      name: "Relação custo-retorno"
+      logic: "Se custo cognitivo > retorno esperado → REJEITAR"
+    - id: "DEC-003"
+      name: "Clareza mínima"
+      logic: "Se problema não está estruturado → ESTRUTURAR antes de agir"
+    - id: "DEC-004"
+      name: "Alavancagem"
+      logic: "Priorizar atividades com efeito multiplicador"
+    - id: "DEC-005"
+      name: "Dinheiro obrigatório"
+      logic: "Se não há caminho claro de monetização → BAIXA PRIORIDADE"
+
+# ============================================================
+# MOTOR DE PROSPECÇÃO
+# ============================================================
+prospection_engine:
+  type: "Arquitetura de oportunidade"
+  incompatible_with: "Prospecção ativa (hostil ao hardware)"
+  description: >
+    Não se pede para desconhecidos de forma fria. Mapeia-se
+    onde o problema já está gritando e sinaliza-se clareza.
+  steps:
+    - etapa: "mapear"
+      descricao: "Onde o problema já é público (dúvida, queixa, post, grupo técnico)?"
+    - etapa: "sinalizar"
+      descricao: "Post ou comentário com diagnóstico em público — sem pedido direto."
+    - etapa: "posicionar"
+      descricao: "Quando alguém responder interessado, oferecer diagnóstico pago."
+    - etapa: "converter"
+      descricao: "Call de validação ≤ 15 min, com preço dito logo no início."
+
+# ============================================================
+# MOTOR DE EXECUÇÃO
+# ============================================================
+execution_engine:
+  phases:
+    - nome: "Diagnóstico"
+      output: "Mapa do problema"
+    - nome: "Modelagem"
+      output: "Estrutura lógica"
+    - nome: "Implementação"
+      output: "Versão funcional mínima"
+    - nome: "Finalização"
+      output: "Entrega utilizável"
+  constraints:
+    - "Não iniciar múltiplas execuções simultâneas"
+    - "Toda execução deve ter critério de fim definido"
+
+# ============================================================
+# PROTOCOLO DE FINALIZAÇÃO
+# ============================================================
+completion_protocol:
+  description: "Sistema para evitar abandono após fase de modelagem."
+  rules:
+    - "Definir entregável antes de iniciar"
+    - "Reduzir escopo até caber em execução única"
+    - "Executar versão imperfeita primeiro"
+    - "Proibir reabertura antes de finalizar"
+  anti_patterns:
+    - "Expansão infinita de escopo"
+    - "Refinamento sem entrega"
+
+# ============================================================
+# MOTOR DE MONETIZAÇÃO
+# ============================================================
+monetization_engine:
+  principle: "Valor só existe se capturado."
+  value_types:
+    - "Diagnóstico"
+    - "Clareza"
+    - "Estrutura"
+    - "Decisão"
+  conversion_rules:
+    - id: "MON-001"
+      logic: "Transformar diagnóstico em serviço pago"
+    - id: "MON-002"
+      logic: "Embalar explicação em produto replicável"
+    - id: "MON-003"
+      logic: "Priorizar problemas com dor explícita do cliente"
+  constraints:
+    - "Evitar entrega gratuita de alto valor"
+    - "Sempre conectar output a preço"
+
+# ============================================================
+# INTERFACE COM MUNDO REAL
+# ============================================================
+reality_interface:
+  problem: "Mundo externo é caótico, emocional e não estruturado."
+  adaptation_rules:
+    - "Traduzir complexidade em simplicidade"
+    - "Reduzir profundidade para comunicação"
+    - "Aceitar imperfeição do interlocutor"
+    - "Operar com fricção como padrão"
+
+# ============================================================
+# MODO DEGRADADO
+# ============================================================
+degraded_mode:
+  trigger:
+    - "Sobrecarga cognitiva"
+    - "Baixa energia"
+    - "Ambiente caótico"
+  behavior:
+    - "Executar apenas tarefas simples"
+    - "Reduzir escopo ao mínimo"
+    - "Evitar decisões complexas"
+  minimum_viable_actions:
+    - "Organizar informação (CRM, planilha)"
+    - "Registrar ideias (sem compromisso de venda)"
+    - "Executar tarefas mecânicas (pós-call, checklist)"
+    - "Postar oferta pronta (sem improviso)"
+
+# ============================================================
+# PROTOCOLOS DE FALHA
+# ============================================================
+failure_protocols:
+  overload:
+    action:
+      - "Reduzir estímulos"
+      - "Isolar ambiente"
+      - "Retornar ao básico"
+  indecision:
+    action:
+      - "Aplicar DEC-001"
+      - "Eliminar opções inválidas"
+      - "Executar menor ação possível"
+  abandonment:
+    action:
+      - "Ativar completion_protocol"
+      - "Forçar entrega mínima"
+
+# ============================================================
+# EXEMPLOS
+# ============================================================
+exemplos:
+  - id: "MANUAL-EX-001"
+    nome: "Decisão de projeto"
+    entrada:
+      atividade: "Criar conteúdo genérico"
+    processamento:
+      - "DEC-001: Não usa ativo principal → REJEITAR"
+      - "DEC-002: Baixo retorno → REJEITAR"
+    saida: "REJEITAR"
+
+  - id: "MANUAL-EX-002"
+    nome: "Monetização direta"
+    entrada:
+      atividade: "Diagnosticar problema de cliente"
+    processamento:
+      - "DEC-001: Usa modelagem conceitual → APROVADO"
+      - "DEC-005: Caminho claro de monetização → PRIORIZAR"
+    saida: "PRIORIZAR"
+
+  - id: "MANUAL-EX-003"
+    nome: "Arquitetura de oportunidade"
+    entrada:
+      contexto: "Usuário posta diagnóstico público de problema de data center"
+      reacao: "Lead responde: 'Isso acontece comigo'"
+    processamento:
+      - "Não improvisar"
+      - "Responder com valor estruturado e preço"
+    saida: >
+      "Mapeio o ponto de falha em 4h. Investimento R$ 3.000. Quer agendar?"
+      → Lead agendou sessão paga.
+
+# ============================================================
+# TEMPLATES
+# ============================================================
+templates:
+  decisao_template: >
+    Se [não usa ativo principal] → REJEITAR
+    Se [alto custo / baixo retorno] → REJEITAR
+    Se [alavancagem + monetização] → EXECUTAR
+
+  execucao_template: >
+    Diagnóstico → Modelagem → Execução → Finalização
+
+  mapa_do_goce: |
+    # MAPA DO GOCE (documento pessoal)
+
+    ## 1. A cena que fixou o goce
+    (descrever a situação traumática)
+
+    ## 2. O que o Outro disse
+    (a palavra que definiu identidade)
+
+    ## 3. O que eu decidi naquele momento
+    (nunca mais me expor? Nunca mais pedir?)
+
+    ## 4. Como esse padrão se repete hoje
+    (venda, relacionamento, compromisso)
+
+    ## 5. O que acontece no corpo quando vou agir
+    (frio, paralisia, descarga)
+
+    ## 6. O ato mínimo viável para hoje
+    (1 mensagem com preço para 1 desconhecido)
+
+# ============================================================
+# REFERÊNCIAS
+# ============================================================
+referencias:
+  - "American Psychiatric Association (2013). DSM-5."
+  - "Freud, S. (1923). O Ego e o Id."
+  - "Lacan, J. (1966). Écrits. Seuil."
+  - "Sartre, J.-P. (1943). L'Être et le Néant. Gallimard."
+  - "Hupfeld, K., Abagis, T. & Shah, P. (2019). Living 'in the zone': hyperfocus in adult ADHD."
+  - "Barros, W. (2026). WB-Dialect v1.0.1 — Formal Specification Language."
+
+# ============================================================
+# LICENÇA
+# ============================================================
+licenca: >
+  Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+  Copyright (c) 2026 Wagner Barros.

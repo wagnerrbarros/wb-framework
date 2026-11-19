@@ -17,3 +17,6 @@ Thumbs.db
 # Env
 .env
 .env.local
+
+# grafo do graphify (regenerado pelo hook)
+graphify-out/
